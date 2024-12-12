@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('Image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+.logo {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+    font-weight: bold;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(100, 167, 228, 8);
+}
+
+.start-page, .app {
+    max-height: 90vh;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(93, 167, 228, 0.5);
+}
+
+.start-page h1, .app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 1000;
+    font-size: 46px;
+}
+
+.start-page p {
+    font-size: 16px;
+    color: #010302;
+    margin-bottom: 30px;
+    font-weight: 1000;
+}
+
+.btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 800;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover:not([disabled]) {
+    background: #002f73;
+}
+
+.correct {
+    background: #07d15f;
+}
+
+.incorrect {
+    background: #f02323;
+}
+
+#next-btn {
+    background: #add8e6;
+    color: #001e4d;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 8px;
+}
+
+#next-btn:hover {
+    background: #87ceeb;
+}
+
+#question {  /* Target the question element */
+    font-weight: 800; /* Thicker font for the question text */
+}
+
+@media (max-width: 768px) {
+    .start-page, .app {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #next-btn {
+        width: 100px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    #next-btn {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .logo {
+        top: 0px;
+        left: 0px;
+        font-size: 45px;
+        border-radius: 8px;
+    }
+}
+
+
+
+
+
