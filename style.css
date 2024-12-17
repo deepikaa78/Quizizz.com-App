@@ -6,7 +6,10 @@
 }
 
 body {
-    background: url('Image.jpg') no-repeat center center fixed;
+    background-image: url('Image.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
